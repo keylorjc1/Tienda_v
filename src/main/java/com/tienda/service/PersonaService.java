@@ -42,5 +42,10 @@ public class PersonaService implements iPersonaService{
     public Persona getPersonaById(Long idPersona) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+    
+    @Override
+    public Persona findByNombre(String username) {
+    return personaRepository.findByNombre(username);
+     }
 
 }
