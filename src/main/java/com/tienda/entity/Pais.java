@@ -7,11 +7,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import java.io.Serializable;
 
-/**
- *
- * @author User
- */
-@Entity
+@Entity //patron decorador//
 @Table (name="paises")
 public class Pais implements Serializable{
     @Id
@@ -34,4 +30,6 @@ public class Pais implements Serializable{
     public void setPais(String pais) {
         this.pais = pais;
     }
+   
+    
 }

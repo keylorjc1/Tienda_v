@@ -19,10 +19,7 @@ public class Userprincipal implements UserDetails {
         this.persona = persona;
     }
     @Override
-    Public Collection
-    <? extends GrantedAuthotity
-
-    > getAuthorities() {
+    Public Collection<? extends GrantedAuthotity> getAuthorities() {
         List<GrantedAuthotity> authorities = new ArrayList<>();
 
         this.persona.getPermissionList().forEach(p -> {
